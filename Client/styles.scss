@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  #message-container {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 25px;
+    max-height: 85vh;
+    overflow-y: auto;
+
+    div {
+      background-color: #CCC;
+      width: max-content;
+      padding: 5px;
+      border-bottom-right-radius: 6px;
+      margin-top: 7px;
+
+      &.welcome{
+        background-color: #0fe00fa6;
+      }
+      &.message{
+        background-color: #0000ff82;
+      }
+      &.disconnection{
+        background-color: transparent;
+        text-decoration: line-through;
+      }
+      
+    }
+  }
+
+
+  #send-container {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: white;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+  }
+
+  #message-input {
+    flex-grow: 1;
+  }
+}
